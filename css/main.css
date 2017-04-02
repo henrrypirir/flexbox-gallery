@@ -6,6 +6,7 @@ body{
   color: #212121;
 }
 
+.main-menu a{margin-right: 25px;}
 .content{
   width: 80%;
   margin: 25px auto;
@@ -13,10 +14,11 @@ body{
 
 .logo{font-size: 22px; font-weight: bold;}
 .flex-box{display: -webkit-flex; display: flex;}
+.s-around{-webkit-justify-content: space-around; justify-content: space-around;}
 .s-between{-webkit-justify-content: space-between; justify-content: space-between;}
 .a-center{-webkit-align-items: center; align-items: center;}
 .s-center{-webkit-justify-content: center; justify-content: center;}
-a{text-decoration: none;}
+a{text-decoration: none; color: #757575;}
 
 main{
   height: calc(100vh - 72px);
@@ -119,10 +121,13 @@ pre .regexp {color: #009926;}
     background: #000;
   }
   .main-menu a{color: #fff;}
-  .main-menu .content{
+  .main-menu > div{
+    width: 80%;
     display: flex;
     justify-content: space-between;
     margin: 10px auto;
     align-items: center;
   }
 }
+
+@media (max-width: 340px){.slogan{font-size: 1em;}}
