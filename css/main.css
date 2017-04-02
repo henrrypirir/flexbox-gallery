@@ -60,6 +60,7 @@ pre {
     padding: 6px 10px;
     line-height: 19px;
     margin-bottom: 20px;
+    overflow: auto;
 }
 
 code {
@@ -107,3 +108,21 @@ pre .string, pre .support.value  {
 }
 
 pre .regexp {color: #009926;}
+
+@media (max-width: 480px){
+  .main-menu{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: #000;
+  }
+  .main-menu a{color: #fff;}
+  .main-menu .content{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    align-items: center;
+  }
+}
