@@ -20,7 +20,7 @@ a{text-decoration: none;}
 
 main{
   height: calc(100vh - 72px);
-  width: 100vw;
+  width: 100%;
   background: #388E3C;
   background: -webkit-linear-gradient(#388E3C, #4CAF50);
   background: -o-linear-gradient(#388E3C, #4CAF50);
