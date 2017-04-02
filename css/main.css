@@ -6,13 +6,23 @@ body{
   color: #212121;
 }
 
+.title{text-align: center;}
+.title:after{
+  content: "";
+  background-color: #4cae50;
+  display: table;
+  padding: 2px;
+  width: 35px;
+  margin: 10px auto 0;
+}
 .main-menu a{margin-right: 25px;}
 .content{
   width: 80%;
   margin: 25px auto;
 }
-
+.network{font-size: 1.4em;}
 .logo{font-size: 22px; font-weight: bold;}
+.f-wrap{flex-wrap: wrap; -webkit-flex-wrap: nowrap;}
 .flex-box{display: -webkit-flex; display: flex;}
 .s-around{-webkit-justify-content: space-around; justify-content: space-around;}
 .s-between{-webkit-justify-content: space-between; justify-content: space-between;}
@@ -54,6 +64,13 @@ main{
 #install{
   padding-top: 35px;
   padding-bottom:35px;
+}
+
+footer{
+  background: #2e2e2e;
+  color: white;
+  padding: 5px 10%;
+  text-align: center;
 }
 
 pre {
