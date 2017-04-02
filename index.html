@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photo Gallery Responsive | Henrry Pirir</title>
+    <!-- Chrome, Firefox OS, Opera and Vivaldi -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <meta name="description" content="Welcome to my autobiography, I am web developer and I'll show you my skills, habilities, workflow, experience and so much more.">
+    <meta name="keywords" content="web developer, programadores en guatemala, paginas web, drupal, front end, innovacion, creatividad, adaptable, sitios responsives, tecnologia, tecnología en guatemala, geek, e-commerce, web service, sql, my sql, wordpress, ciudad de guatemala, empresas de tecnología, html 5, css 3, jQuery, nodejs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Henrry Pirir">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./js/lib/flexbox-gallery.css">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <header>
+      <div class="content flex-box s-between">
+        <span class="logo">⚡ Flex-box Gallery</span>
+        <nav>
+          <a href="#">View on GitHub</a>
+          <a class="download" href="./flexbox-gallery.zip" download>Download</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-box a-center s-center">
+      <div class="slogan">
+        <h1>The ease way to create gallery for developing responsive, with CSS and jQuery</h1>
+        <a class="button" href="#install">Get Started</a>
+      </div>
+    </main>
+
+    <section id="install">
+      <div class="content">
+      <h1>How to install</h1>
+        <div class="step">
+          <h3>Step 1: Add required files</h3>
+          <p>First and most important, the jQuery library needs to be included. Next, download the package from this site and link the Flexbox Gallery Javascript file & Flexbox Gallery CSS file.</p>
+<pre><code data-language="html" class="rainbow"><span class="comment html">&lt;!-- jQuery library (served from Google) --&gt;</span>
+<span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">script</span></span> <span class="support attribute">src</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js</span><span class="string quote">"</span><span class="support tag close">&gt;</span><span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">script</span></span><span class="support tag close">&gt;</span>
+<span class="comment html">&lt;!-- Flexbox Gallery Javascript file --&gt;</span>
+<span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">script</span></span> <span class="support attribute">src</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">/js/lib/flexbox-gallery.js</span><span class="string quote">"</span><span class="support tag close">&gt;</span><span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">script</span></span><span class="support tag close">&gt;</span>
+<span class="comment html">&lt;!-- Flexbox Gallery CSS file --&gt;</span>
+<span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">link</span></span> <span class="support attribute">href</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">/js/lib/flexbox-gallery.css</span><span class="string quote">"</span> <span class="support attribute">rel</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">stylesheet</span><span class="string quote">"</span> <span class="support tag close">/&gt;</span></code></pre>
+        </div>
+
+        <div class="step">
+        <h3>Step 2: HTML markup</h3>
+        <p>Create a <code>&lt;div id="container"&gt;</code> element, with a <code>&lt;div&gt;</code> or <code>&lt;figure&gt;</code> for each image.</p>
+<pre><code data-language="html" class="rainbow"><span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">id</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">container</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+  <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">figure</span></span><span class="support tag close">&gt;</span><span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">img</span></span> <span class="support attribute">src</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">/images/pic1.jpg</span><span class="string quote">"</span> <span class="support tag close">/&gt;</span><span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">figure</span></span><span class="support tag close">&gt;</span>
+  <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">figure</span></span><span class="support tag close">&gt;</span><span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">img</span></span> <span class="support attribute">src</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">/images/pic2.jpg</span><span class="string quote">"</span> <span class="support tag close">/&gt;</span><span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">figure</span></span><span class="support tag close">&gt;</span>
+  <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">figure</span></span><span class="support tag close">&gt;</span><span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">img</span></span> <span class="support attribute">src</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">/images/pic3.jpg</span><span class="string quote">"</span> <span class="support tag close">/&gt;</span><span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">figure</span></span><span class="support tag close">&gt;</span>
+  <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">figure</span></span><span class="support tag close">&gt;</span><span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">img</span></span> <span class="support attribute">src</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">/images/pic4.jpg</span><span class="string quote">"</span> <span class="support tag close">/&gt;</span><span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">figure</span></span><span class="support tag close">&gt;</span>
+<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span></code></pre>
+        </div>
+
+        <div class="step">
+        <h3>Step 3: Call the Flexbox Gallery</h3>
+        <p>Call .flexgal() on <code>&lt;div id="container"&gt;</code></p>
+      <pre><code data-language="javascript" class="rainbow"><span class="selector">$</span>(<span class="support">document</span>).<span class="function call">ready</span>(<span class="keyword">function</span>(){
+ <span class="selector"> $</span>(<span class="string">'#container'</span>).<span class="function call">flexgal</span>();
+});</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="container">
+        <figure>
+          <img srcset="https://cdn.pixabay.com/photo/2015/11/18/11/25/fichtelberg-1048982_960_720.jpg 1x, https://cdn.pixabay.com/photo/2015/11/18/11/25/fichtelberg-1048982_1280.jpg 2x" src="https://cdn.pixabay.com/photo/2015/11/18/11/25/fichtelberg-1048982_960_720.jpg">
+        </figure>
+        <figure>
+          <img srcset="https://cdn.pixabay.com/photo/2014/08/26/15/09/sports-428030_960_720.jpg 1x, https://cdn.pixabay.com/photo/2014/08/26/15/09/sports-428030_1280.jpg 2x" src="https://cdn.pixabay.com/photo/2014/08/26/15/09/sports-428030_960_720.jpg">
+        </figure>
+        <figure>
+          <img srcset="https://cdn.pixabay.com/photo/2015/11/18/11/24/windrader-1048981_960_720.jpg 1x, https://cdn.pixabay.com/photo/2015/11/18/11/24/windrader-1048981_1280.jpg 2x" src="https://cdn.pixabay.com/photo/2015/11/18/11/24/windrader-1048981_960_720.jpg">
+        </figure>
+        <figure>
+          <img srcset="https://cdn.pixabay.com/photo/2015/02/10/16/45/woman-631266_960_720.jpg 1x, https://cdn.pixabay.com/photo/2015/02/10/16/45/woman-631266_1280.jpg 2x" src="https://cdn.pixabay.com/photo/2015/02/10/16/45/woman-631266_960_720.jpg">
+        </figure><figure>
+          <img srcset="https://cdn.pixabay.com/photo/2013/10/28/22/22/garda-202065_960_720.jpg 1x, https://cdn.pixabay.com/photo/2013/10/28/22/22/garda-202065_1280.jpg 2x" src="https://cdn.pixabay.com/photo/2013/10/28/22/22/garda-202065_960_720.jpg">
+        </figure>
+        <figure>
+          <img srcset="https://cdn.pixabay.com/photo/2016/11/16/10/27/girl-1828538_960_720.jpg 1x, https://cdn.pixabay.com/photo/2016/11/16/10/27/girl-1828538_1280.jpg 2x" src="https://cdn.pixabay.com/photo/2016/11/16/10/27/girl-1828538_960_720.jpg">
+        </figure><figure>
+          <img srcset="https://cdn.pixabay.com/photo/2017/03/26/20/03/kaiser-wilhelm-2176402_960_720.jpg 1x, https://cdn.pixabay.com/photo/2017/03/26/20/03/kaiser-wilhelm-2176402_1280.jpg 2x" src="https://cdn.pixabay.com/photo/2017/03/26/20/03/kaiser-wilhelm-2176402_960_720.jpg">
+        </figure>
+        <figure>
+          <img srcset="https://cdn.pixabay.com/photo/2017/03/22/17/40/hill-2165759_960_720.jpg 1x, https://cdn.pixabay.com/photo/2017/03/22/17/40/hill-2165759_1280.jpg 2x" src="https://cdn.pixabay.com/photo/2017/03/22/17/40/hill-2165759_960_720.jpg">
+        </figure>
+        <figure>
+          <img srcset="https://cdn.pixabay.com/photo/2013/10/09/02/26/coast-192979_960_720.jpg 1x, https://cdn.pixabay.com/photo/2013/10/09/02/26/coast-192979_1280.jpg 2x" src="https://cdn.pixabay.com/photo/2013/10/09/02/26/coast-192979_960_720.jpg">
+        </figure><figure>
+          <img srcset="https://cdn.pixabay.com/photo/2016/11/14/15/29/hummingbird-1823829_960_720.jpg 1x, https://cdn.pixabay.com/photo/2016/11/14/15/29/hummingbird-1823829_1280.jpg 2x" src="https://cdn.pixabay.com/photo/2016/11/14/15/29/hummingbird-1823829_960_720.jpg">
+        </figure>
+        <figure>
+          <img srcset="https://cdn.pixabay.com/photo/2017/03/15/13/27/rough-horn-2146181_960_720.jpg 1x, https://cdn.pixabay.com/photo/2017/03/15/13/27/rough-horn-2146181_1280.jpg 2x" src="https://cdn.pixabay.com/photo/2017/03/15/13/27/rough-horn-2146181_960_720.jpg">
+        </figure>
+      </div>
+    </section>
+
+    <footer>
+      <div class="content">
+        <p>Created by <a href="https://twitter.com/henrrypirir" target="_blank">@henrrypirir</a></p>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type='text/javascript' src="./js/lib/flexbox-gallery.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-85190556-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script>
+      $(function(){
+        $('#container').flexgal();
+      });
+    </script>
+  </body>
+</html>
