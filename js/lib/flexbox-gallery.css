@@ -72,7 +72,7 @@
 
 @media (max-width: 480px){
   .image-rate{
-    width: calc(50% - 5px) !important;
-    height: 400px !important;
+    width: calc(50% - 5px);
+    height: calc(50vw - 5px);
   }
 }
