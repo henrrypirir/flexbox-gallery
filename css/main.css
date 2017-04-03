@@ -22,7 +22,7 @@ body{
 }
 .network{font-size: 1.4em;}
 .logo{font-size: 22px; font-weight: bold;}
-.f-wrap{flex-wrap: wrap; -webkit-flex-wrap: nowrap;}
+.f-wrap{flex-wrap: wrap; -webkit-flex-wrap: wrap;}
 .flex-box{display: -webkit-flex; display: flex;}
 .s-around{-webkit-justify-content: space-around; justify-content: space-around;}
 .s-between{-webkit-justify-content: space-between; justify-content: space-between;}
@@ -137,7 +137,7 @@ pre .regexp {color: #009926;}
     z-index: 9999;
     background: #000;
   }
-  .main-menu a{color: #fff;}
+  .main-menu a{color: #fff; margin-right: 0;}
   .main-menu > div{
     width: 80%;
     display: flex;
@@ -146,5 +146,5 @@ pre .regexp {color: #009926;}
     align-items: center;
   }
 }
-
+@media (min-width: 480px) and (orientation: landscape){.slogan{font-size: 1em;}}
 @media (max-width: 340px){.slogan{font-size: 1em;}}
