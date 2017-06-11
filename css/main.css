@@ -128,6 +128,33 @@ pre .string, pre .support.value  {
 
 pre .regexp {color: #009926;}
 
+.thanks{
+  background: url("../images/thanks.png");
+  background-position: center;
+  overflow: hidden;
+  height: calc(100vh - 55px);
+}
+.card{
+  width: 35%;
+  margin: 120px auto 0;
+}
+.row{
+  padding: 50px 0;
+  border: 1px solid #2e2e2e;
+}
+.card .head{
+  text-align: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background: #2e2e2e;
+}
+.card .body{
+  background: #f2f2f2;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.copyright a{margin-right: 10px;}
+.copyright i{font-size: 18px;}
 @media (max-width: 480px){
   .main-menu{
     position: fixed;
