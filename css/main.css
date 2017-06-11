@@ -164,13 +164,15 @@ pre .regexp {color: #009926;}
     z-index: 9999;
     background: #000;
   }
-  .main-menu a{color: #fff; margin-right: 0;}
+  .main-menu a{color: #fff;}
   .main-menu > div{
     width: 80%;
-    display: flex;
-    justify-content: space-between;
     margin: 10px auto;
-    align-items: center;
+  }
+  .download{
+    border: 0px;
+    padding: 0px;
+    border-radius: 0;
   }
 }
 @media (min-width: 480px) and (orientation: landscape){.slogan{font-size: 1em;}}
